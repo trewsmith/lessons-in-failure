@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celebrate Failure: Growth Through Failure</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Title Section -->
+    <section id="title-section">
+        <div class="title-content">
+            <h1>Celebrate Failure</h1>
+            <p>Learn Why Failure is Essential for Growth</p>
+        </div>
+    </section>
+
+    <!-- General Description Section -->
+<section id="description-section">
+    <div class="description-content">
+        <h2>Historical Failures</h2>
+        <p>
+            Throughout history, many of the most successful and influential people faced numerous failures on their journey to greatness. 
+            Whether it was Albert Einstein, who struggled in school, or Thomas Edison, who famously said, 
+            "I have not failed. I've just found 10,000 ways that won't work," failure has been an essential part of their paths.
+        </p>
+        <p>
+            From business leaders to scientists, to artists and athletes, the road to success is rarely smooth. 
+            This website is dedicated to showcasing that failure isn't something to be feared—it's an opportunity to grow and learn. 
+            By studying the stories of historical failures, we can find the inspiration to persevere through our own challenges.
+        </p>
+    </div>
+</section>
+
+
+    <!-- Timeline Section -->
+    <section id="timeline-section">
+        <div class="timeline">
+            <div class="timeline-item slide-in-left" onclick="openModal(0)">
+                <div class="content-left">
+                    <h2>The Fall of The Roman Empire</h2>
+                    <h3>476</h3>
+                    <p>Click to learn more.</p>
+                </div>
+                <div class="image-right">
+                    <img src="images/romanempire.jpg" alt="Image for failure #1">
+                </div>
+            </div>
+            <div class="timeline-item slide-in-right" onclick="openModal(1)">
+                <div class="content-right">
+                    <h2>Roanoke Colony Disappearance</h2>
+                    <h3>1590</h3>
+                    <p>Click to learn more.</p>
+                </div>
+                <div class="image-left">
+                    <img src="images/lostcolony.jpg" alt="Image for failure #2">
+                </div>
+            </div>
+            <div class="timeline-item slide-in-left" onclick="openModal(2)">
+                <div class="content-left">
+                    <h2>The Salem Witch Trials</h2>
+                    <h3>1693</h3>
+                    <p>Click to learn more.</p>
+                    
+                </div>
+                <div class="image-right">
+                    <img src="images/witchtrials.jpg" alt="Image for failure #3">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Add New Failure Section -->
+    <section id="add-failure-section">
+        <h2>Add Your Own Failure</h2>
+        <form id="failure-form">
+            <input type="text" id="failure-title" placeholder="Title of Failure" required>
+            <textarea id="failure-description" placeholder="Description of Failure" required></textarea>
+            <input type="text" id="failure-image" placeholder="Image URL (optional)">
+            <button type="submit">Add Failure</button>
+        </form>
+    </section>
+
+    
+
+    <!-- Quote Generator Section -->
+    <section id="quote-section">
+        <h2>Random Quote on Failure</h2>
+        <button id="generate-quote">Generate Quote</button>
+        <p id="quote-display"></p>
+    </section>
+
+    <!-- Modal Section -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-body"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
